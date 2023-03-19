@@ -38,8 +38,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnEnemyDie(int reward)
+    public void AddMoney(int money)
     {
-        Money += reward;
+        Money += money;
     }
+
+    //private void OnEnemyDie(int reward)
+    //{
+    //    Money += reward;
+    //}
 }
