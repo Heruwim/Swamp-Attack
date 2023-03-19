@@ -55,6 +55,12 @@ public class Spawner : MonoBehaviour
         _currentWave = _waves[index];
     }
 
+    public void NextWave()
+    {
+        SetWave(++_currentWaveNumber);
+        _spawned = 0;
+    }
+
     private void OnEnemyDying(Enemy enemy)
     {
         enemy.Dying -= OnEnemyDying;
